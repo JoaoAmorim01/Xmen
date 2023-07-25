@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap"rel="stylesheet"/>
+    <title>X-men</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+    <link rel="shortcut icon" href="./src/img/facIcon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img id="cabecalho" src="./src/img/logo.svg" alt="Logo dos X-men">
+    </header>
+    <main>
+        <section class="personagens">
+                <h1>Selecione um personagem</h1>
+                <ul class="personaList">
+                    <li class="personagem selecionado" id="ciclope"><img src="./src/img/card-ciclope.jpg" alt="Ciclopes, um mutante de cabelos castanhos que usa um óculos de lenta única e vermelha que o permite enxergar e controlar seus poderes que são lançar raios vermelhos de calor pelos olhos" ></li>
+                    <!-- Podemos definir duas classes usando espaço entre duas palavras porém elas devem ser chamado com ponto na frente de cada palavra e as duas juntas quando forem ser chamadas em css  -->
+                    <li class="personagem" id="jean"><img src="./src/img/card-jean-grey.jpg" alt=""></li>
+                    <li class="personagem" id="lince"><img src="./src/img/card-lince-negra.jpg" alt=""></li>
+                    <li class="personagem" id="magneto"><img src="./src/img/card-magneto.jpg" alt=""></li>
+                    <li class="personagem" id="noturno"><img src="./src/img/card-noturno.jpg" alt=""></li>
+                    <li class="personagem" id="tempestade"><img src="./src/img/card-tempestade.jpg" alt=""></li>
+                    <li class="personagem" id="vampira"><img src="./src/img/card-vampira.jpg" alt=""></li>
+                    <li class="personagem" id="wolverine"><img src="./src/img/card-wolverine.jpg" alt=""></li>
+                </ul>
+        </section>
+        <section class="personaSelect">
+            <img class="personaGrande" src="./src/img/card-ciclope.png" alt="">
+            <div class="personaInfo">
+                <h2 class="personaNome" id="personaNome">Ciclope</h2>
+                <p class="personaDesc">Ele tem o poder de disparar rajadas ópticas por um acidente que aconteceu com ele quando criança, mas não consegue controlá-los</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
