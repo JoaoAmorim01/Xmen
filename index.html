@@ -6,12 +6,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap"rel="stylesheet"/>
+    
     <title>X-men</title>
 
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="./src/css/responsivo.css">
     <link rel="shortcut icon" href="./src/img/facIcon.png" type="image/x-icon">
+    <script src="./src/js/script.js" defer></script>
 </head>
 <body>
     <header>
@@ -21,22 +23,22 @@
         <section class="personagens">
                 <h1>Selecione um personagem</h1>
                 <ul class="personaList">
-                    <li class="personagem selecionado" id="ciclope"><img src="./src/img/card-ciclope.jpg" alt="Ciclopes, um mutante de cabelos castanhos que usa um óculos de lenta única e vermelha que o permite enxergar e controlar seus poderes que são lançar raios vermelhos de calor pelos olhos" ></li>
+                    <li class="personagem selecionado" id="ciclope" data-name="Ciclope" data-description="Tem o poder de disparar rajadas ópticas que só podem ser contidas e controladas por lente de quarto-rubi"><img src="./src/img/card-ciclope.jpg" alt="Personagem Ciclope, um mutante de cabelos castanhos que usa um óculos de lenta única e vermelha que o permite enxergar e controlar seus poderes que são lançar raios vermelhos de calor pelos olhos" ></li>
                     <!-- Podemos definir duas classes usando espaço entre duas palavras porém elas devem ser chamado com ponto na frente de cada palavra e as duas juntas quando forem ser chamadas em css  -->
-                    <li class="personagem" id="jean"><img src="./src/img/card-jean-grey.jpg" alt=""></li>
-                    <li class="personagem" id="lince"><img src="./src/img/card-lince-negra.jpg" alt=""></li>
-                    <li class="personagem" id="magneto"><img src="./src/img/card-magneto.jpg" alt=""></li>
-                    <li class="personagem" id="noturno"><img src="./src/img/card-noturno.jpg" alt=""></li>
-                    <li class="personagem" id="tempestade"><img src="./src/img/card-tempestade.jpg" alt=""></li>
-                    <li class="personagem" id="vampira"><img src="./src/img/card-vampira.jpg" alt=""></li>
-                    <li class="personagem" id="wolverine"><img src="./src/img/card-wolverine.jpg" alt=""></li>
+                    <li class="personagem" id="jean-grey" data-name="Jean Grey" data-description="Jean Grey é uma mutante nível ômega e o principal avatar da Força Fênix, no qual manifesta poderes cósmicos. A telepatia e telecinese"><img src="./src/img/card-jean-grey.jpg" alt="Personagem Jean Grey, uma jovem mulher branca e ruiva"></li>
+                    <li class="personagem" id="lince-negra" data-name="Lince Negra" data-description="Ela tem o poder de atravessar matéria sólida,campos de energia, rajadas ópticas, continuando intacta,e também tem o poder de andar no ar"><img src="./src/img/card-lince-negra.jpg" alt="Personagem Lince Negra, uma jovem mulher branca com cabelos morenos"></li>
+                    <li class="personagem" id="magneto" data-name="Magneto" data-description="Ele tem o poder de magnetocinese, ou seja, controlar objetos de metal e criar campos magnéticos"><img src="./src/img/card-magneto.jpg" alt="Personagem Magneto, um homem branco que usa um capacete roxo no rosto para esconder sua identidade."></li>
+                    <li class="personagem" id="noturno" data-name="Noturno" data-description="Além de exepcionais habilidades acrobáticas e o dom de se fixar a paredes ou tetos, tem o poder de se teletransportar"><img src="./src/img/card-noturno.jpg" alt="Personagem Noturno, possui a pele escura como a noite, três dedos em cada mão, e dois dedos nos pés, possui cabelos escuros e tem uma cauda com a ponta triangular."></li>
+                    <li class="personagem" id="tempestade" data-name="Tempestade" data-description="Uma autoproclamada deusa pagã, controla as forças da natureza, pode produzir raios, chuvas, gelos, ventos, neblina, entre outros efeitos"><img src="./src/img/card-tempestade.jpg" alt="Personagem Tempestade, uma linda mulher negra de cabelos e olhos brancos"></li>
+                    <li class="personagem" id="vampira" data-name="Vampira" data-description="Ela tem o poder de absorver a vitalidade e memória das pessoas que toca ou no caso dos mutantes os poderes e a memória, mas só temporariamente"><img src="./src/img/card-vampira.jpg" alt="Personagem Vampira - Uma jovem mulher branca com o cabelo de duas cores, morena com topete branco."></li>
+                    <li class="personagem" id="wolverine" data-name="Wolverine" data-description="Seu esqueleto e garras são de adamatium, tornando-o indestrutível. Seu fator de cura é capaz de suportar quase todos os ferimentos, doenças ou venenos"><img src="./src/img/card-wolverine.jpg" alt="Personagem Wolverine"></li>
                 </ul>
         </section>
         <section class="personaSelect">
-            <img class="personaGrande" src="./src/img/card-ciclope.png" alt="">
+            <img class="personaGrande" src="./src/img/card-ciclope.png" alt="Personagem Selecionado">
             <div class="personaInfo">
                 <h2 class="personaNome" id="personaNome">Ciclope</h2>
-                <p class="personaDesc">Ele tem o poder de disparar rajadas ópticas por um acidente que aconteceu com ele quando criança, mas não consegue controlá-los</p>
+                <p id="personaDesc">Ele tem o poder de disparar rajadas ópticas por um acidente que aconteceu com ele quando criança, mas não consegue controlá-los</p>
             </div>
         </section>
     </main>
